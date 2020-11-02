@@ -1,13 +1,12 @@
 import React from 'react';
-import Page from '../components/global/Page';
-import { Pane, Paragraph, Heading, IconButton, SearchIcon, StarIcon, ArrowLeftIcon, SearchInput, TextInput } from 'evergreen-ui';
-import { withGoogleMap, withScriptjs, GoogleMap, Marker } from "react-google-maps"
-import { Link, useHistory } from 'react-router-dom'
+import { Pane, Paragraph, Heading, IconButton, SearchIcon, StarIcon, ArrowLeftIcon, TextInput } from 'evergreen-ui';
+// import { withGoogleMap, withScriptjs, GoogleMap, Marker } from "react-google-maps"
+import { Link } from 'react-router-dom'
 import GoogleMapReact from 'google-map-react';
 
 
 function Category() {
-  const history = useHistory();
+  // const history = useHistory();
   return (
     <Pane background="tealTint" minHeight="100vh">
       <Pane>
@@ -31,7 +30,7 @@ function Category() {
             <Link to="/product">
               <Pane display="flex">
                 <Pane marginRight={16}>
-                  <img src="https://via.placeholder.com/64" />
+                  <img src="https://via.placeholder.com/64" alt="avatar" />
                 </Pane>
                 <Pane flex={1}>
                   <Paragraph>Product description Lorem ipsum dolor sit amet consectetur adipisicing elit.</Paragraph>
@@ -47,7 +46,7 @@ function Category() {
             <Link to="/product">
               <Pane display="flex">
                 <Pane marginRight={16}>
-                  <img src="https://via.placeholder.com/64" />
+                  <img src="https://via.placeholder.com/64" alt="item" />
                 </Pane>
                 <Pane flex={1}>
                   <Paragraph>Product description Lorem ipsum dolor sit amet consectetur adipisicing elit.</Paragraph>
@@ -64,7 +63,7 @@ function Category() {
             <Link to="/product">
               <Pane display="flex">
                 <Pane marginRight={16}>
-                  <img src="https://via.placeholder.com/64" />
+                  <img src="https://via.placeholder.com/64" alt="item2" />
                 </Pane>
                 <Pane flex={1}>
                   <Paragraph>Product description Lorem ipsum dolor sit amet consectetur adipisicing elit.</Paragraph>
@@ -113,17 +112,17 @@ const SimpleMap = () => {
   );
 }
 
-const CategoryMap = withScriptjs(withGoogleMap((props) => {
-  const history = useHistory();
-  return (
-    <GoogleMap
-      defaultZoom={10}
-      defaultCenter={{ lat: -34.397, lng: 150.644 }}
-    >
-      <Marker onClick={() => history.push('/product/1')} position={{ lat: -34.397, lng: 150.644 }} />
-      <Marker onClick={() => history.push('/product/2')} position={{ lat: -34.297, lng: 150.544 }} />
-    </GoogleMap>
-  )
-}));
+// const CategoryMap = withScriptjs(withGoogleMap((props) => {
+//   const history = useHistory();
+//   return (
+//     <GoogleMap
+//       defaultZoom={10}
+//       defaultCenter={{ lat: -34.397, lng: 150.644 }}
+//     >
+//       <Marker onClick={() => history.push('/product/1')} position={{ lat: -34.397, lng: 150.644 }} />
+//       <Marker onClick={() => history.push('/product/2')} position={{ lat: -34.297, lng: 150.544 }} />
+//     </GoogleMap>
+//   )
+// }));
 
 export default Category;

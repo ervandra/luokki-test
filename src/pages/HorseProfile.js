@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Pane, Paragraph, IconButton, ArrowLeftIcon, Heading, Spinner } from 'evergreen-ui';
 import { Link } from 'react-router-dom';
 import { GoogleSpreadsheet } from "google-spreadsheet";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 
 
 import key from '../key.json';
@@ -23,9 +22,7 @@ function HorseProfile() {
       console.log('e', e)
     }
   }
-  useEffect(() => {
-    loadData();
-  }, [])
+  useEffect(loadData, [])
   if (!data) return (
     <Pane display="flex" alignItems="center" justifyContent="center" height={400}>
       <Spinner />
@@ -61,11 +58,11 @@ function HorseProfile() {
           </Pane>
         </div> */}
         <div className="gallery">
-          <a href="#">Show All </a>
+          <a href="#show-all">Show All </a>
           {data.gallery && (
             <Pane display="flex" flexWrap="wrap">
               {data.gallery.split(', ').map((img) => (
-                <Pane flex={1}><img src={img} /></Pane>
+                <Pane flex={1}><img src={img} alt={img} /></Pane>
               ))}
             </Pane>
           )}

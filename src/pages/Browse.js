@@ -37,7 +37,7 @@ function Browse() {
               <Link to="/product">
                 <Pane display="flex">
                   <Pane marginRight={16}>
-                    <img src="https://via.placeholder.com/64" />
+                    <img src="https://via.placeholder.com/64" alt="image1" />
                   </Pane>
                   <Pane flex={1}>
                     <Paragraph>Product description Lorem ipsum dolor sit amet consectetur adipisicing elit.</Paragraph>
@@ -48,7 +48,7 @@ function Browse() {
             <div className="list-order-item">
               <Pane display="flex">
                 <Pane marginRight={16}>
-                  <img src="https://via.placeholder.com/64" />
+                  <img src="https://via.placeholder.com/64" alt="image2" />
                 </Pane>
                 <Pane flex={1}>
                   <Paragraph>Product description Lorem ipsum dolor sit amet consectetur adipisicing elit.</Paragraph>
@@ -58,7 +58,7 @@ function Browse() {
             <div className="list-order-item">
               <Pane display="flex">
                 <Pane marginRight={16}>
-                  <img src="https://via.placeholder.com/64" />
+                  <img src="https://via.placeholder.com/64" alt="image3" />
                 </Pane>
                 <Pane flex={1}>
                   <Paragraph>Product description Lorem ipsum dolor sit amet consectetur adipisicing elit.</Paragraph>
@@ -73,7 +73,7 @@ function Browse() {
               <Link to="/product">
                 <Pane display="flex">
                   <Pane marginRight={16}>
-                    <img src="https://via.placeholder.com/64" />
+                    <img src="https://via.placeholder.com/64" alt="image3" />
                   </Pane>
                   <Pane flex={1}>
                     <Paragraph>Product description Lorem ipsum dolor sit amet consectetur adipisicing elit.</Paragraph>
@@ -84,7 +84,7 @@ function Browse() {
             <div className="list-order-item">
               <Pane display="flex">
                 <Pane marginRight={16}>
-                  <img src="https://via.placeholder.com/64" />
+                  <img src="https://via.placeholder.com/64" alt="image4" />
                 </Pane>
                 <Pane flex={1}>
                   <Paragraph>Product description Lorem ipsum dolor sit amet consectetur adipisicing elit.</Paragraph>
@@ -94,7 +94,7 @@ function Browse() {
             <div className="list-order-item">
               <Pane display="flex">
                 <Pane marginRight={16}>
-                  <img src="https://via.placeholder.com/64" />
+                  <img src="https://via.placeholder.com/64" alt="image5" />
                 </Pane>
                 <Pane flex={1}>
                   <Paragraph>Product description Lorem ipsum dolor sit amet consectetur adipisicing elit.</Paragraph>
@@ -109,7 +109,7 @@ function Browse() {
               <Link to="/product">
                 <Pane display="flex">
                   <Pane marginRight={16}>
-                    <img src="https://via.placeholder.com/64" />
+                    <img src="https://via.placeholder.com/64" alt="image6" />
                   </Pane>
                   <Pane flex={1}>
                     <Paragraph>Product description Lorem ipsum dolor sit amet consectetur adipisicing elit.</Paragraph>
@@ -120,7 +120,7 @@ function Browse() {
             <div className="list-order-item">
               <Pane display="flex">
                 <Pane marginRight={16}>
-                  <img src="https://via.placeholder.com/64" />
+                  <img src="https://via.placeholder.com/64" alt="image7" />
                 </Pane>
                 <Pane flex={1}>
                   <Paragraph>Product description Lorem ipsum dolor sit amet consectetur adipisicing elit.</Paragraph>
@@ -130,7 +130,7 @@ function Browse() {
             <div className="list-order-item">
               <Pane display="flex">
                 <Pane marginRight={16}>
-                  <img src="https://via.placeholder.com/64" />
+                  <img src="https://via.placeholder.com/64" alt="image8" />
                 </Pane>
                 <Pane flex={1}>
                   <Paragraph>Product description Lorem ipsum dolor sit amet consectetur adipisicing elit.</Paragraph>
