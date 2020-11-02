@@ -1,0 +1,22 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  h2 {
+    margin: 0;
+    font-size: 1em;
+  }
+}
+
+.list-order-item {
+  margin-bottom: 16px;
+  img {
+    border-radius: 8px;
+  }
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
