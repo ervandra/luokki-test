@@ -1,56 +1,52 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 function Item() {
   return (
-    <div className="app-container">
-      <div className="container">
-        <div className="row">
-          <div className="col">
-            <h3>Item</h3>
+    <div class="app-container">
+      <div className="cover-image">
+        <img src="https://i.imgur.com/Z95yaKb.jpg" alt="horse service" />
+        <div className="internal-header">
+          <div className="back-button">
+            <Link to="/">
+              <span className="fa fa-chevron-left"></span>
+            </Link>
+          </div>
+          <div className="header-content">
+            <div className="header-title">
+              <h2>Horse Service A</h2>
+              <h3>Helsynki</h3>
+            </div>
+            <div className="header-additional">
+              <h4>Price</h4>
+              <h5>$120-230</h5>
+            </div>
           </div>
         </div>
       </div>
-    </div>
-    // <Pane>
-    //   <Pane className="cover-image">
-    //     <img src={data.cover_image} alt={data.horse_name} />
-    //     <Pane display="flex" alignItems="center" paddingY={8} paddingX={8} style={{ background: `linear-gradient(to bottom, transparent, #ffffffee 60% )`, position: 'sticky', top: 0, marginTop: '-140px', paddingTop: '100px' }}>
-    //       <IconButton is={Link} to="/" icon={ArrowLeftIcon} size={32} appearance="minimal" marginRight={8} />
-    //       <Pane flex={1}>
-    //         <Heading size={200}><Link to="/horse">{data.horse_name}</Link></Heading>
-    //         <Heading size={100}>{data.category}</Heading>
-    //       </Pane>
-    //       <Pane textAlign="right">
-    //         <Heading size={200}>Prices</Heading>
-    //         <Heading size={200}>${data.price} - 456</Heading>
-    //       </Pane>
-    //     </Pane>
-    //   </Pane>
-    //   <Pane padding={16}>
-    //     <Paragraph>{data.description}</Paragraph>
-    //     <Heading size={500} marginTop={16}>Provider name</Heading>
-    //     <Paragraph>{data.provider_description}</Paragraph>
-    //     <div className="social-media" style={{ marginTop: '16px' }}>
-    //       <Pane display="flex">
-    //         {data.instagram_link !== '' && (
-    //           <Pane flex={1}>
-    //             <a href={data.instagram_link}><FontAwesomeIcon icon={['fab', 'instagram']} size="2x" /></a>
-    //           </Pane>
-    //         )}
-    //         <Pane flex={1}>
-    //           <a href={data.youtube_link}><FontAwesomeIcon icon={['fab', 'youtube']} size="2x" /></a>
-    //         </Pane>
-    //       </Pane>
-    //     </div>
-    //     {/* <Heading>Name: {data.horse_name}</Heading>
-    //     <Heading>Owner: {data.owner_name}</Heading>
-    //     <Heading>Price: {data.price}</Heading>
-    //     <Heading>Rating: {data.rating}</Heading>
-    //     <Heading>Description: {data.description}</Heading> */}
-    //   </Pane>
+      <div className="container">
+        <div className="row">
+          <div className="col">
+            <div padding={16}>
+              <p>Horses share many of the same physiologic characteristics of people and domestic pets, in that they have a circulatory system, a respiratory system, a nervous system, and so on. However, they also have many unique characteristics that differ from those of people and other companion animals. For example, horses have developed a large strong band of connective tissue, called the nuchal ligament, to provide support for their relatively long and heavily muscled neck.</p>
+              <h3>Provider name</h3>
+              <p>Horses are used primarily for pleasure riding, showing, racing, and pulling carts or carriages. Horses are still used for agricultural purpose</p>
+              <div className="social-media" style={{ marginTop: '16px' }}>
+                <div display="flex">
 
-    // </Pane>
+                  <div flex={1}>
+                    <a href="https://instagram.com/ervandrahalim"><span className="fa fa-instagram"></span></a>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
   )
 }
 

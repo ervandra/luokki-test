@@ -2,14 +2,18 @@ import React from 'react';
 import Page from '../components/global/Page';
 import { useTranslation } from 'react-i18next';
 
-import { Link } from 'react-router-dom'
+import { Link, useHistory } from 'react-router-dom'
 
 import image1 from '../assets/images/image1.jpg';
 import image2 from '../assets/images/image2.jpg';
 
 function Browse() {
-  const { t, ready } = useTranslation()
-  if (!ready) return null;
+  const { t } = useTranslation();
+  const history = useHistory();
+  const formSubmit = e => {
+    e.preventDefault();
+    history.push('/search')
+  }
   return (
     <div className="app-container">
       <div className="home-header">
@@ -32,10 +36,10 @@ function Browse() {
         <div className="container">
           <div className="row">
             <div className="col">
-              <form action="search">
+              <form action="search" id="search-form" onSubmit={formSubmit}>
                 <div className="input-group mb-3 ">
                   <select className="form-select form-select-sm" aria-label={t('select_tip_browse_view')} name="category">
-                    <option selected value="none">{t('select_tip_browse_view')}</option>
+                    <option defaultValue="none">{t('select_tip_browse_view')}</option>
                     <option value="1">Category 1</option>
                     <option value="1">Category 2</option>
                     <option value="1">Category 3</option>

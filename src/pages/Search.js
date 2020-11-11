@@ -4,85 +4,79 @@ import React from 'react';
 import { Link } from 'react-router-dom'
 import GoogleMapReact from 'google-map-react';
 
+import image1 from '../assets/images/image1.jpg';
+import image2 from '../assets/images/image2.jpg';
 
 function Search() {
-  // const history = useHistory();
+
   return (
-    <Pane background="tealTint" minHeight="100vh">
-      <Pane>
-        {/* <SearchMap googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuaV7aVdh3G0VmDW4wn3C9JJUGZXqGWaY&v=3.exp&libraries=geometry,drawing,places"
-          loadingElement={<div style={{ height: `100%` }} />}
-          containerElement={<div style={{ height: `400px`, maxHeight: `50vh` }} />}
-          mapElement={<div style={{ height: `100%` }} />} /> */}
+    <div className="app-container">
+      <div className="map-container">
         <SimpleMap />
-      </Pane>
-      <Pane display="flex" alignItems="center" padding={16} style={{ background: `linear-gradient(to bottom, transparent, #f1fbfc 50%)`, position: 'sticky', top: 0, marginTop: '-30px' }}>
-        <IconButton is={Link} to="/" icon={ArrowLeftIcon} size={32} appearance="minimal" marginRight={8} />
-        <Pane display="flex" flex={1}>
-          <TextInput placeholder="Search by name.." width="100%" />
-          <IconButton appearance="minimal" intent="none" icon={SearchIcon} size={32} marginLeft={8} />
-        </Pane>
-      </Pane>
-      <Pane padding="16">
-        <Heading is="h4" size={200} marginBottom={16}>Near you</Heading>
-        <div className="list">
-          <div className="list-order-item">
-            <Link to="/product">
-              <Pane display="flex">
-                <Pane marginRight={16}>
-                  <img src="https://via.placeholder.com/64" alt="avatar" />
-                </Pane>
-                <Pane flex={1}>
-                  <Paragraph>Product description Lorem ipsum dolor sit amet consectetur adipisicing elit.</Paragraph>
-                </Pane>
-                <Pane marginLeft={8} textAlign="center">
-                  <Heading size={300}>$123</Heading>
-                  <Heading size={200} color="orange" display="flex" alignItems="center"><StarIcon size={10} marginRight={4} /> 4.5</Heading>
-                </Pane>
-              </Pane>
-            </Link>
-          </div>
-          <div className="list-order-item">
-            <Link to="/product">
-              <Pane display="flex">
-                <Pane marginRight={16}>
-                  <img src="https://via.placeholder.com/64" alt="item" />
-                </Pane>
-                <Pane flex={1}>
-                  <Paragraph>Product description Lorem ipsum dolor sit amet consectetur adipisicing elit.</Paragraph>
-                </Pane>
-                <Pane marginLeft={8} textAlign="center">
-                  <Heading size={300}>$123</Heading>
-                  <Heading size={200} color="orange" display="flex" alignItems="center"><StarIcon size={10} marginRight={4} /> 4.5</Heading>
-                </Pane>
-
-              </Pane>
-            </Link>
-          </div>
-          <div className="list-order-item">
-            <Link to="/product">
-              <Pane display="flex">
-                <Pane marginRight={16}>
-                  <img src="https://via.placeholder.com/64" alt="item2" />
-                </Pane>
-                <Pane flex={1}>
-                  <Paragraph>Product description Lorem ipsum dolor sit amet consectetur adipisicing elit.</Paragraph>
-                </Pane>
-                <Pane marginLeft={8} textAlign="center">
-                  <Heading size={300}>$123</Heading>
-                  <Heading size={200} color="orange" display="flex" alignItems="center"><StarIcon size={10} marginRight={4} /> 4.5</Heading>
-                </Pane>
-
-              </Pane>
-            </Link>
+      </div>
+      <div className="internal-header">
+        <div className="back-button">
+          <Link to="/">
+            <span className="fa fa-chevron-left"></span>
+          </Link>
+        </div>
+        <div className="header-content">
+          <div className="search-header">
+            <input className="form-control form-control-sm" type="text" placeholder="Search by name.." />
+            <button className="btn btn-sm btn-primary btn-round"><span className="fa fa-search"></span></button>
           </div>
         </div>
-      </Pane>
-    </Pane>
+      </div>
+      <div className="container">
+        <div className="row">
+          <div className="col">
+
+
+            <div className="list-order-container">
+              <h3>Near You</h3>
+              <div className="list-order-item">
+                <div className="order-item">
+                  <div className="order-item-image">
+                    <Link to="/item/10"><img src={image1} alt="Item 1" /></Link>
+                  </div>
+                  <div className="order-item-description">
+                    <h4><Link to="/item/10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, vel.</Link></h4>
+                  </div>
+                </div>
+                <div className="order-item">
+                  <div className="order-item-image">
+                    <Link to="/item/11"><img src={image2} alt="Item 2" /></Link>
+                  </div>
+                  <div className="order-item-description">
+                    <h4><Link to="/item/12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi veniam ea vitae.</Link></h4>
+                  </div>
+                </div>
+                <div className="order-item">
+                  <div className="order-item-image">
+                    <Link to="/item/10"><img src={image1} alt="Item 1" /></Link>
+                  </div>
+                  <div className="order-item-description">
+                    <h4><Link to="/item/10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, vel.</Link></h4>
+                  </div>
+                </div>
+                <div className="order-item">
+                  <div className="order-item-image">
+                    <Link to="/item/11"><img src={image2} alt="Item 2" /></Link>
+                  </div>
+                  <div className="order-item-description">
+                    <h4><Link to="/item/12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi veniam ea vitae.</Link></h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
   )
 }
 
-const AnyReactComponent = ({ text }) => <IconButton appearance="minimal" intent="danger" icon={StarIcon} />;
+const AnyReactComponent = () => <div className="btn" appearance="minimal" intent="danger"><span className="fa fa-star"></span></div>;
 
 const SimpleMap = () => {
   const options = {
@@ -111,18 +105,5 @@ const SimpleMap = () => {
     </div>
   );
 }
-
-// const SearchMap = withScriptjs(withGoogleMap((props) => {
-//   const history = useHistory();
-//   return (
-//     <GoogleMap
-//       defaultZoom={10}
-//       defaultCenter={{ lat: -34.397, lng: 150.644 }}
-//     >
-//       <Marker onClick={() => history.push('/product/1')} position={{ lat: -34.397, lng: 150.644 }} />
-//       <Marker onClick={() => history.push('/product/2')} position={{ lat: -34.297, lng: 150.544 }} />
-//     </GoogleMap>
-//   )
-// }));
 
 export default Search;

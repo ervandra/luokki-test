@@ -4,6 +4,8 @@ import './assets/css/app.scss';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 // import Browse from './pages/Browse';
 import Home from './pages/Home';
+import Search from './pages/Search';
+import Item from './pages/Item';
 // import BusinessProfile from './pages/BusinessProfile';
 // import Category from './pages/Category';
 // import HorseProfile from './pages/HorseProfile';
@@ -17,6 +19,12 @@ function App() {
   return (
     <Router>
       <Switch>
+        <Route path="/search">
+          <Search />
+        </Route>
+        <Route path="/item">
+          <Item />
+        </Route>
         {/* <Route path="/category">
           <Category />
         </Route>
