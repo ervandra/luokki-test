@@ -1,17 +1,20 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
+import './assets/css/bootstrap.min.css';
+import './assets/css/font-awesome.min.css';
+import './assets/css/global.scss'
 import './assets/css/app.scss'
 import App from './App';
+import './i18n';
 import * as serviceWorker from './serviceWorker';
-import { fab } from '@fortawesome/free-brands-svg-icons'
-import { library } from '@fortawesome/fontawesome-svg-core'
-library.add(fab);
+
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <React.Suspense fallback="...">
+      <App />
+    </React.Suspense>
   </React.StrictMode>,
   document.getElementById('root')
 );

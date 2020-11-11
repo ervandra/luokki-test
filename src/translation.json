@@ -1,0 +1,78 @@
+{
+	"en": {
+		"translation": {
+			"home_button_label": "Home",
+			"profile_button_label": "Profile",
+			"guidance_browse_view": "Please select a product or search",
+			"select_tip_browse_view": "Category select",
+			"my_recent_orders_title": "My Recent Orders",
+			"most_ordered_products_title": "Most Ordered",
+			"promoted_products_title": "Promotions",
+			"search_tip_category_view": "Search by name",
+			"request_quotation_label": "Request Quotation",
+			"request_header_label": "Request",
+			"quotation_header_label": "Quotation",
+			"confirmation_header_label": "Confirm",
+			"select_tip_purchase_flow_view": "Select Horse",
+			"request_location_label": "Location",
+			"request_time_label": "Time"
+		}
+	},
+	"fi": {
+		"translation": {
+			"home_button_label": "Koti",
+			"profile_button_label": "Profiili",
+			"guidance_browse_view": "Valitse tuote tai hae",
+			"select_tip_browse_view": "Luokka valitse",
+			"my_recent_orders_title": "Minun Viimeaikaiset tilaukset",
+			"most_ordered_products_title": "useimmat Tilattu",
+			"promoted_products_title": "tarjouksia",
+			"search_tip_category_view": "Etsiä nimen",
+			"request_quotation_label": "Pyydä tarjous",
+			"request_header_label": "Pyyntö",
+			"quotation_header_label": "lainaus",
+			"confirmation_header_label": "Vahvistaa",
+			"select_tip_purchase_flow_view": "Valitse Hevonen",
+			"request_location_label": "Sijainti",
+			"request_time_label": "Aika"
+		}
+	},
+	"id": {
+		"translation": {
+			"home_button_label": "Rumah",
+			"profile_button_label": "Profil",
+			"guidance_browse_view": "Silakan pilih produk atau cari",
+			"select_tip_browse_view": "Kategori pilih",
+			"my_recent_orders_title": "Pesanan Saya Terbaru",
+			"most_ordered_products_title": "kebanyakan Memerintahkan",
+			"promoted_products_title": "promosi",
+			"search_tip_category_view": "Cari berdasarkan nama",
+			"request_quotation_label": "Permintaan Quotation",
+			"request_header_label": "Permintaan",
+			"quotation_header_label": "Kutipan",
+			"confirmation_header_label": "Konfirmasi",
+			"select_tip_purchase_flow_view": "Pilih Kuda",
+			"request_location_label": "tempat",
+			"request_time_label": "Waktu"
+		}
+	},
+	"de": {
+		"translation": {
+			"home_button_label": "Zuhause",
+			"profile_button_label": "Profil",
+			"guidance_browse_view": "Bitte wählen Sie ein Produkt oder suchen",
+			"select_tip_browse_view": "Kategorie wählen",
+			"my_recent_orders_title": "Meine Letzte Bestellungen",
+			"most_ordered_products_title": "Die meisten bestellt",
+			"promoted_products_title": "Promotions",
+			"search_tip_category_view": "Suche mit Name",
+			"request_quotation_label": "Angebot anfordern",
+			"request_header_label": "Anfrage",
+			"quotation_header_label": "Zitat",
+			"confirmation_header_label": "Bestätigen",
+			"select_tip_purchase_flow_view": "Wählen Pferd",
+			"request_location_label": "Ort",
+			"request_time_label": "Zeit"
+		}
+	}
+}

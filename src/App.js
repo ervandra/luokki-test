@@ -1,14 +1,15 @@
 import React from 'react';
-import './App.css';
+import './assets/css/app.scss';
 
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import Browse from './pages/Browse';
-import BusinessProfile from './pages/BusinessProfile';
-import Category from './pages/Category';
-import HorseProfile from './pages/HorseProfile';
-import ProductProfile from './pages/ProductProfile';
-import Purchase from './pages/Purchase';
-import UserProfile from './pages/UserProfile';
+// import Browse from './pages/Browse';
+import Home from './pages/Home';
+// import BusinessProfile from './pages/BusinessProfile';
+// import Category from './pages/Category';
+// import HorseProfile from './pages/HorseProfile';
+// import ProductProfile from './pages/ProductProfile';
+// import Purchase from './pages/Purchase';
+// import UserProfile from './pages/UserProfile';
 
 
 function App() {
@@ -16,7 +17,7 @@ function App() {
   return (
     <Router>
       <Switch>
-        <Route path="/category">
+        {/* <Route path="/category">
           <Category />
         </Route>
         <Route path="/business">
@@ -33,9 +34,9 @@ function App() {
         </Route>
         <Route path="/profile">
           <UserProfile />
-        </Route>
+        </Route> */}
         <Route path="/" exact>
-          <Browse />
+          <Home />
         </Route>
       </Switch>
     </Router>

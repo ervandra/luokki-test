@@ -1,16 +1,16 @@
 import React from 'react';
-import { Pane, Paragraph, Heading, IconButton, SearchIcon, StarIcon, ArrowLeftIcon, TextInput } from 'evergreen-ui';
+// import { Pane, Paragraph, Heading, IconButton, SearchIcon, StarIcon, ArrowLeftIcon, TextInput } from 'evergreen-ui';
 // import { withGoogleMap, withScriptjs, GoogleMap, Marker } from "react-google-maps"
 import { Link } from 'react-router-dom'
 import GoogleMapReact from 'google-map-react';
 
 
-function Category() {
+function Search() {
   // const history = useHistory();
   return (
     <Pane background="tealTint" minHeight="100vh">
       <Pane>
-        {/* <CategoryMap googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuaV7aVdh3G0VmDW4wn3C9JJUGZXqGWaY&v=3.exp&libraries=geometry,drawing,places"
+        {/* <SearchMap googleMapURL="https://maps.googleapis.com/maps/api/js?key=AIzaSyCuaV7aVdh3G0VmDW4wn3C9JJUGZXqGWaY&v=3.exp&libraries=geometry,drawing,places"
           loadingElement={<div style={{ height: `100%` }} />}
           containerElement={<div style={{ height: `400px`, maxHeight: `50vh` }} />}
           mapElement={<div style={{ height: `100%` }} />} /> */}
@@ -112,7 +112,7 @@ const SimpleMap = () => {
   );
 }
 
-// const CategoryMap = withScriptjs(withGoogleMap((props) => {
+// const SearchMap = withScriptjs(withGoogleMap((props) => {
 //   const history = useHistory();
 //   return (
 //     <GoogleMap
@@ -125,4 +125,4 @@ const SimpleMap = () => {
 //   )
 // }));
 
-export default Category;
+export default Search;

@@ -1,0 +1,38 @@
+:root {
+  --xs: 12px;
+  --sm: 14px;
+  --md: 16px;
+  --lg: 18px;
+  --xl: 20px;
+  --xxl: 24px;
+  --primary: #1fb6ff;
+  --black: #3c4858;
+  --silver: #8492a6;
+  --grey: #eff2f7;
+  --purple: #7e5bef;
+  --orange: #ff7849;
+  --red: #ff4949;
+  --green: #13ce66;
+}
+
+body {
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  background: #f3f6f9;
+  color: var(--black);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Lato", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+  color: var(--black);
+}
+
+a {
+  color: var(--primary);
+}
