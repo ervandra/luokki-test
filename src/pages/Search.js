@@ -2,15 +2,18 @@ import React from 'react';
 // import { Pane, Paragraph, Heading, IconButton, SearchIcon, StarIcon, ArrowLeftIcon, TextInput } from 'evergreen-ui';
 // import { withGoogleMap, withScriptjs, GoogleMap, Marker } from "react-google-maps"
 import { Link } from 'react-router-dom'
+import { Helmet } from 'react-helmet'
 import GoogleMapReact from 'google-map-react';
 
 import image1 from '../assets/images/image1.jpg';
 import image2 from '../assets/images/image2.jpg';
 
 function Search() {
-
   return (
     <div className="app-container">
+      <Helmet>
+        <title>Search | Luokki</title>
+      </Helmet>
       <div className="map-container">
         <SimpleMap />
       </div>
@@ -40,7 +43,11 @@ function Search() {
                     <Link to="/item/10"><img src={image1} alt="Item 1" /></Link>
                   </div>
                   <div className="order-item-description">
-                    <h4><Link to="/item/10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, vel.</Link></h4>
+                    <h4><Link to="/item/10">Lorem ipsum dolor sit amet Ratione, vel.</Link></h4>
+                  </div>
+                  <div className="order-item-info">
+                    <h4>€ 123</h4>
+                    <h5><span className="fa fa-star"></span> 4.5</h5>
                   </div>
                 </div>
                 <div className="order-item">
@@ -48,7 +55,11 @@ function Search() {
                     <Link to="/item/11"><img src={image2} alt="Item 2" /></Link>
                   </div>
                   <div className="order-item-description">
-                    <h4><Link to="/item/12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi veniam ea vitae.</Link></h4>
+                    <h4><Link to="/item/12">Lorem ipsum, sit Quasi veniam ea vitae.</Link></h4>
+                  </div>
+                  <div className="order-item-info">
+                    <h4>€ 155</h4>
+                    <h5><span className="fa fa-star"></span> 4.8</h5>
                   </div>
                 </div>
                 <div className="order-item">
@@ -56,7 +67,11 @@ function Search() {
                     <Link to="/item/10"><img src={image1} alt="Item 1" /></Link>
                   </div>
                   <div className="order-item-description">
-                    <h4><Link to="/item/10">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, vel.</Link></h4>
+                    <h4><Link to="/item/10">Lorem elit. Ratione, vel.</Link></h4>
+                  </div>
+                  <div className="order-item-info">
+                    <h4>€ 234</h4>
+                    <h5><span className="fa fa-star"></span> 4.9</h5>
                   </div>
                 </div>
                 <div className="order-item">
@@ -64,7 +79,11 @@ function Search() {
                     <Link to="/item/11"><img src={image2} alt="Item 2" /></Link>
                   </div>
                   <div className="order-item-description">
-                    <h4><Link to="/item/12">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quasi veniam ea vitae.</Link></h4>
+                    <h4><Link to="/item/12">Quasi veniam ea vitae.</Link></h4>
+                  </div>
+                  <div className="order-item-info">
+                    <h4>€ 550</h4>
+                    <h5><span className="fa fa-star"></span> 5.0</h5>
                   </div>
                 </div>
               </div>

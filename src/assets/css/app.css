@@ -1,0 +1,223 @@
+#header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#header h2 {
+  margin: 0;
+  font-size: 1em;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+.home-header {
+  padding: 1rem 0;
+}
+.home-header h2 {
+  font-size: var(--sm);
+  font-weight: bold;
+  margin: 0;
+}
+.home-header img {
+  border-radius: 30rem;
+  overflow: hidden;
+}
+
+.search-widget {
+  margin-bottom: 0.5rem;
+}
+
+.list-order-container {
+  margin-bottom: 2rem;
+}
+.list-order-container h3 {
+  margin-bottom: 0.5rem;
+  line-height: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-size: var(--xs);
+  position: relative;
+  color: var(--silver);
+  display: flex;
+  align-items: center;
+}
+.list-order-container h3 .fa {
+  margin-right: 0.5rem;
+  display: none;
+}
+
+.list-order-item {
+  margin: 0;
+  padding: 0;
+}
+.list-order-item .order-item {
+  display: flex;
+  align-items: center;
+}
+.list-order-item .order-item + .order-item {
+  margin-top: 1rem;
+}
+.list-order-item .order-item .order-item-image {
+  width: 48px;
+  margin-right: 1rem;
+}
+.list-order-item .order-item .order-item-image img {
+  width: 48px;
+  height: 48px;
+  overflow: hidden;
+  object-fit: cover;
+  border-radius: 8px;
+}
+.list-order-item .order-item .order-item-description {
+  flex: 1;
+}
+.list-order-item .order-item .order-item-description h4 {
+  margin: 0;
+  font-size: var(--md);
+}
+.list-order-item .order-item .order-item-description h4 a {
+  color: var(--black);
+  text-decoration: none;
+}
+.list-order-item .order-item .order-item-info {
+  margin-left: 1rem;
+  align-self: start;
+}
+.list-order-item .order-item .order-item-info h4,
+.list-order-item .order-item .order-item-info h5 {
+  font-size: var(--sm);
+  font-weight: bold;
+  margin: 0;
+}
+.list-order-item .order-item .order-item-info h5 {
+  color: var(--orange);
+}
+.list-order-item .order-item .order-item-info h5 .fa {
+  color: var(--yellow);
+}
+
+.internal-header {
+  display: flex;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  padding: 16px 8px;
+  margin-top: -30px;
+  background: linear-gradient(to bottom, transparent, #f3f6f9 50%);
+}
+.internal-header .back-button a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px;
+  height: 32px;
+  text-decoration: none;
+  font-size: var(--lg);
+  text-align: center;
+  color: var(--black);
+}
+.internal-header .header-content {
+  padding: 0 8px;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+}
+.internal-header .header-title h2 {
+  font-size: var(--md);
+  margin: 0;
+}
+.internal-header .header-title h3 {
+  font-size: var(--sm);
+  margin: 0;
+}
+.internal-header .header-additional h4,
+.internal-header .header-additional h5 {
+  font-size: var(--sm);
+  margin: 0;
+}
+.internal-header .header-additional h4 {
+  text-align: right;
+}
+.internal-header .search-header {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.internal-header .search-header input {
+  flex: 1;
+  margin: 0;
+}
+.internal-header .search-header .btn {
+  border-radius: 30rem;
+  margin-left: 0.5rem;
+}
+
+.social-media {
+  margin-bottom: 2rem;
+}
+.social-media a {
+  font-size: var(--xxl);
+  color: var(--purple);
+}
+
+.error-page {
+  text-align: center;
+  padding: 1rem 0;
+}
+.error-page .error-image {
+  margin-bottom: 1rem;
+}
+.error-page h2 {
+  font-size: var(--xl);
+  font-weight: bold;
+}
+
+.main-content h3 {
+  font-size: var(--lg);
+  font-weight: bold;
+}
+
+.main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  position: sticky;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 25;
+  background: #fff;
+}
+.main-menu .menu-item {
+  flex: 1;
+}
+.main-menu .menu-item + .menu-item {
+  border-left: 1px solid var(--border);
+}
+.main-menu .menu-item a {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+  height: 48px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  font-size: var(--xs);
+  color: var(--black);
+  background: linear-gradient(to bottom, var(--grey), var(--white));
+}
+.main-menu .menu-item a span {
+  display: block;
+  line-height: 1.2;
+}
+.main-menu .menu-item a .menu-icon {
+  font-size: var(--lg);
+  color: var(--silver);
+}
